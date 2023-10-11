@@ -1,0 +1,120 @@
+
+body{
+  
+  background-color: antiquewhite;
+}
+
+
+.container{
+  display: flex;
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
+  min-height: 800px;
+  justify-content: center;
+}
+
+
+.three h1 {
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+  margin-left: 15px;
+}
+.three h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 55px;
+  background-color: #111;
+}
+.three h1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  height: 1px;
+  width: 95%;
+  max-width: 255px;
+  background-color: #333;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 15px;
+  background-color: grey;
+  border-radius: 15px;
+}
+
+form input{
+  padding: 17px 48px;
+  border-radius: 500px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+form button{
+  
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #1ED760;
+  height: 48px;
+  
+
+}
+
+form button:hover{
+    transform: scale(1.04);
+    background-color: #21e065;
+}
+
+form .chat{
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+form .chat li{
+  margin:15px 0 5px 0 ;
+  background-color: rgb(89, 177, 197);
+  padding: 15px;
+  width: 250px;
+  list-style: none;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+form .chat .chat-me{
+  background-color: aquamarine;
+  align-self: self-end;
+  
+}
