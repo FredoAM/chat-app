@@ -2,7 +2,6 @@ import express from "express";
 import http from "http";
 import { Server} from "socket.io";
 import cors from "cors";
-import { PORT } from "./server/config.js";
 import { dirname , join} from "path";
 import { fileURLToPath } from "url";
 
@@ -13,7 +12,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 //Middlewares
 app.use(cors());
-app.use(express.static(join(__dirname, './Frontend/build')) );
+app.use(express.static(join(__dirname, './Frontend/dist')) );
 
 
 const io = new Server(server, {
@@ -31,6 +30,6 @@ const io = new Server(server, {
     });
   });
 
-server.listen(PORT, () => {
-    console.log('listening on:', PORT);
+server.listen(process.env.PORT, () => {
+    console.log('listening on:', process.env.PORT);
   });
