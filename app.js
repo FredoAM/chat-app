@@ -2,12 +2,10 @@ import express from "express";
 import http from "http";
 import { Server} from "socket.io";
 import cors from "cors";
-import { dirname , join} from "path";
-import { fileURLToPath } from "url";
+import 'dotenv/config'
 
 const app = express();
 const server = http.createServer(app);
-const __dirname = dirname(fileURLToPath(import.meta.url));
 
 
 //Middlewares

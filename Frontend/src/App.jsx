@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import './App.css';
 
 
-const socket = io("window.location.host");
+const socket = io("https://chat-app-production-5c19.up.railway.app/");
 
 const App = () => {
   
@@ -35,7 +35,7 @@ useEffect(() => {
   return (
     <div className="container">
       <form onSubmit={handleSubmit}>
-        <div class="three">
+        <div className="three">
           <h1>Best Friend</h1>
         </div>
         <input
