@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon app.js"
+    "start":"node app.js",
+    "dev": "nodemon app.js",
+    "build":"npm --prefix frontend install && npm run --prefix frontend dist"
   },
   "keywords": [],
   "author": "",

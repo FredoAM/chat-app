@@ -3,17 +3,17 @@ import http from "http";
 import { Server} from "socket.io";
 import cors from "cors";
 import { PORT } from "./server/config.js";
-
+import { dirname , join} from "path";
+import { fileURLToPath } from "url";
 
 const app = express();
 const server = http.createServer(app);
-
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 
 //Middlewares
 app.use(cors());
-// app.use(express.static('Frontend') );
-// app.use(express.urlencoded({ extended: false }));
+app.use(express.static(join(__dirname, './Frontend/build')) );
 
 
 const io = new Server(server, {
