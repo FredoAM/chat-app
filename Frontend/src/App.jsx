@@ -44,6 +44,7 @@ useEffect(() => {
           placeholder="Write your message..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
+          autocomplete="off"
         />
         <button>Send</button>
         <ul className="chat">
