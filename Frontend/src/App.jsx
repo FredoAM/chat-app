@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import './App.css';
 
 
-const socket = io("https://chat-app-production-5c19.up.railway.app/");
+const socket = io("window.location.host");
 
 const App = () => {
   

@@ -12,7 +12,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 //Middlewares
 app.use(cors());
-app.use(express.static(join(__dirname, './Frontend/dist')) );
+//app.use(express.static(join(__dirname, './Frontend/dist')) );
 
 
 const io = new Server(server, {
