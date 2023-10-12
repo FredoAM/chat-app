@@ -7,7 +7,7 @@
   "scripts": {
     "start":"node app.js",
     "dev": "nodemon app.js",
-    "build":"npm --prefix Frontend install && npm run --prefix frontend dist"
+    "build":"npm --prefix frontend install && npm run --prefix frontend dist"
   },
   "keywords": [],
   "author": "",
