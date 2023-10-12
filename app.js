@@ -17,7 +17,7 @@ app.use(express.static(join(__dirname, './Frontend/dist')) );
 
 const io = new Server(server, {
     cors: {
-      origin: "http://localhost:5173"
+      origin: "https://chat-app-production-5c19.up.railway.app/"
     }
   });
 
